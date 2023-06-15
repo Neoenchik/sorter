@@ -1,0 +1,27 @@
+﻿<Window x:Class="sorter_photo.NameNewFolder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sorter_photo"
+        mc:Ignorable="d"
+        Title="Новое имя" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="2">Enter name new folder:</TextBlock>
+        <TextBox Name="NameFolder" Grid.Row="1" MinWidth="250" Grid.ColumnSpan="2">Name</TextBox>
+
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Left" Margin="105,0,0,0" Grid.ColumnSpan="2" >
+            <Button IsDefault="True" Click="Button_Click" MinWidth="60" Margin="0,0,10,0">OK</Button>
+            <Button IsCancel="True" MinWidth="60" >Cancel</Button>
+        </WrapPanel>
+    </Grid>
+</Window>
